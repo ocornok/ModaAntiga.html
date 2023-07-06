@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif; 
+/Utilizado para definir a famila de fonte apresentada no site por ordem de maor prioridade/
+  margin: 0;
+  /Utilizado para definir margem, ou seja definir que não espaço em branco em volta/
+  padding: 0;
+  /Utilizado para informar o espaçamento entre o item e a sua borda/
+  background-color: #dee0f3;
+  /Utilizado para definir cor de fundo do site/
+}
+
+.container {
+  display: flex;
+  /Define o elemento como um container flexível/
+  flex-wrap: wrap;
+  /Permite que os itens sejam envolvidos em várias linhas quando não couberem em uma única linha/
+  align-items: flex-start;
+  /Alinha os itens no eixo transversal (verticalmente) no início do container/
+  justify-content: space-between;
+  /Distribui o espaço disponível entre os itens, deixando um espaço igual entre eles/
+  padding: 20px;
+  /Adiciona um preenchimento interno de 20 pixels em todos os lados do contêiner/
+}
+
+.container img {
+  max-width: 100%;
+  /Define a largura máxima da imagem como 100% do container/
+  height: auto;
+ /* Mantém a proporção original da imagem, ajustando automaticamente a altura*/
+  width: 96%;
+  /Define a largura da imagem como 96% do container/
+}
+
+.image {
+  width: 100%;
+  /Define a largura da imagem como 100% do container/
+  margin-bottom: 20px;
+  /Adiciona uma margem inferior de 20 pixels para criar um espaçamento entre as imagens/
+}
+
+.text {
+  width: 100%;
+   /Define a largura do elemento de texto como 100% do container/
+}
+
+header {
+  background-color: #1F2666;
+  /Define cor de fundo do cabeçalho/
+  padding: 10px;
+  /Adiciona um preenchimento interno de 10 pixels em todos os lados do cabeçalho/
+  text-align: center;
+  /Alinha o conteúdo do cabeçalho ao centro/
+  display: flex;
+  /Define o cabeçalho como um contêiner flexível/
+  align-items: center;
+  /Alinha os itens do cabeçalho verticalmente ao centro/
+  justify-content: space-between;
+  /Distribui o espaço disponível entre os itens do cabeçalho, deixando um espaço igual entre eles/
+}
+
+.abas a{
+  text-decoration: none;
+  /Remove a decoração de texto nos links dentro das abas/
+  color: #c0c3e0;
+  /Define a cor do texto nos links dentro das abas/
+}
+
+.abas p{
+  margin-left: 15px;
+  /Adiciona uma margem a esquerda de 15 pixels para os parágrafos dentro das abas/
+}
+
+nav {
+  display: flex;
+  /Define o elemento nav como um contêiner flexível/
+  flex-direction: column;
+  /Define a direção dos itens do nav como coluna/
+  align-items: flex-end;
+  /*Alinha os itens do nav ao final do eixo transversal (verticalmente)*/
+}
+
+nav a {
+  margin-bottom: 10px;
+  /Adiciona uma margem inferior de 10 pixels para os links dentro do nav/
+}
+
+.logo {
+  width: 100px;
+  /Define a largura da classe .logo como 100 pixels/
+  height: auto;
+  /Mantém a proporção original da imagem da classe .logo/
+}
+
+.logo img {
+  max-width: 110%;
+  /*Define a largura máxima da imagem dentro da classe .logo como 110%*/
+  height: auto;
+  /Mantém a proporção original da imagem dentro da classe .logo/
+}
+
+footer {
+  background-color: #1F2666;
+  /Define a cor de fundo do rodapé/
+  padding: 10px;
+/Adiciona um preenchimento interno de 10 pixels em todos os lados do rodapé/
+  text-align: center;
+/Alinha o conteúdo do rodapé ao centro/
+  padding: 20px 0;
+/Adiciona um preenchimento interno de 20 pixels nas extremidades superior e inferior do rodapé/
+  color: #ffffff;
+/Define a cor do texto do rodapé/
+  font-size: 14px;
+/Define o tamanho da fonte do texto do rodapé/
+}
+
+.container2{
+  max-width: 1200px;
+/Define a largura máxima do elemento com classe .container2/
+  margin: 0 auto;
+/Centraliza o elemento com classe .container2 horizontalmente/
+  padding: 0 20px;
+/Adiciona um preenchimento interno de 0 no topo e na base e 20 pixels nos lados do elemento com classe .container2/
+}
+
+.row {
+  display: flex;
+/Define o elemento com classe .row como um contêiner flexível/
+  flex-wrap: wrap;
+/Permite que os itens dentro da classe .row sejam envolvidos em várias linhas quando não couberem em uma única linha/
+}
+
+.col {
+  flex: 1 0 25%;
+  /Define a flexibilidade do elemento com classe .col dentro da classe .row/
+  margin-bottom: 20px;
+  /Adiciona uma margem inferior de 20 pixels para os elementos com classe .col/
+}
+
+h4 {
+  font-size: 16px;
+/Define o tamanho da fonte do elemento h4/
+  margin-bottom: 10px;
+/Adiciona uma margem inferior de 10 pixels para os elementos h4/
+}
+
+ul {
+  list-style-type: none;
+/Remove os marcadores de lista dos elementos ul/
+  padding: 0;
+/Define o valor de preenchimento como 0 para todos os lados (superior, direito, inferior e esquerdo) de um elemento/
+}
+
+ul li {
+  margin-bottom: 5px;
+/Adiciona uma margem inferior de 5 pixels para os elementos li dentro da lista ul/
+}
+
+ul li a {
+  color: #fffefe;
+/Define a cor do texto dos links dentro dos elementos li/
+  text-decoration: none;
+ /Remove a decoração de texto nos links dentro dos elementos li/
+}
+
+ul li a:hover {
+  text-decoration: underline;
+/Adiciona um sublinhado nos links dentro dos elementos li quando o cursor passa sobre eles/
+}
+
+.conteudo {
+  text-align: center;
+  /Alinha o conteúdo do elemento com classe .conteudo ao centro/
+}
+
+@media (min-width: 768px) {
+/Define estilos específicos para telas com largura mínima de 768 pixels/
+
+ .container {
+    flex-direction: row;
+/*Altera a direção dos itens do elemento com classe .container para linha (horizontal)*/
+  }
+
+  .image {
+    width: 30%;
+/Define a largura das imagens dentro do elemento com classe .image/
+    margin-bottom: 0;
+/Remove a margem inferior das imagens dentro do elemento com classe .image/
+  }
+
+  .text {
+    width: 70%;
+/Define a largura do conteúdo de texto dentro do elemento com classe .text/
+  }
+}
